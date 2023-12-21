@@ -1,0 +1,37 @@
+li {
+    list-style: none;
+    margin-right: 2%;
+    /* padding-right: 1%; */
+}
+
+.nav-items {
+    display: flex;
+    /* justify-content: flex-end; */
+    font-family: 'Anonymous Pro Bold', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.nav-name {
+    font-size: 2rem;
+    margin-right: auto;
+}
+
+nav {
+    background-color: rgba(247, 247, 247, 0.6);
+    padding: 1px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(0, 255, 34);
+}

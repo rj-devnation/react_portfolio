@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: url('/src/assets/fonts/Anonymous_Pro.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anonymous Pro Bold';
+    src: url('/src/assets/fonts/Anonymous_Pro_B.ttf') format('truetype');
+}

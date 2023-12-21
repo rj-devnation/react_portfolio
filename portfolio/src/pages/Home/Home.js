@@ -1,10 +1,10 @@
 import React from 'react';
+import './Home.css';
+import TypingAnimation from '../../components/TypingAnimation/TypingAnimation';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Roland Geli</h1>
-        </div>
+        <TypingAnimation />
     );
   };
 

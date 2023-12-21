@@ -1,0 +1,15 @@
+.name {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-weight:normal;
+    font-size: 5rem;
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+    margin-top: 12%;
+}
+
+h2{
+    margin-bottom: 0px;
+}

@@ -1,9 +1,30 @@
 @font-face {
-    font-family: 'Anonymous Pro';
-    src: url('/src/assets/fonts/Anonymous_Pro.ttf') format('truetype');
+    font-family: 'Poppins Regular';
+    src: url('/src/assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Anonymous Pro Bold';
-    src: url('/src/assets/fonts/Anonymous_Pro_B.ttf') format('truetype');
+    font-family: 'Poppins Bold';
+    src: url('/src/assets/fonts/Poppins-Bold.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('/src/assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Semi Bold';
+    src: url('/src/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Extra Bold';
+    src: url('/src/assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Bold Italic';
+    src: url('/src/assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+}
+

@@ -1,0 +1,18 @@
+.project-header {
+    font-family: 'Poppins Semi Bold';
+    font-size: 3rem;
+    display: inline-block;
+    margin:0;
+}
+
+.project-header::content {
+    margin-bottom: 0px;
+}
+
+.project {
+    display: inline-block;
+    font-family: 'Poppins Bold';
+    margin-bottom: 40dvh;
+    font-size: 2rem;
+    padding-left: 20dvw;
+}

@@ -53,7 +53,6 @@ li {
 .logo {
     font-family: 'Poppins Extra Bold';
     position: relative;
-    /* left: 1.5vw; */
     justify-content: center;
     font-size: 2.14em;
     margin: 0 auto;
@@ -161,7 +160,10 @@ input:checked + .slider:before {
     } */
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1510px) {
+    .logo {
+        position: static;
+    }
     .menu {
         display: none;
         flex-direction: column;
@@ -189,12 +191,12 @@ input:checked + .slider:before {
     }
 }
 
-@media only screen and (min-width: 1311px){
-    .mode-label {
-        display: flex;
+@media only screen and (min-width: 970px){
+    .logo {
+        left: 2.5em;
     }
 
-    .logo {
-        position: sticky;
+    .mode-label {
+        display: flex;
     }
 }

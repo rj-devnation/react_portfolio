@@ -5,7 +5,7 @@ import './TypingAnimation.css';
 const TypingAnimation = () => {
 
   return (
-    <div className='content'>
+    <div >
         <div className='center'>
             <div className='name'>
                 <h2>Roland Geli</h2>

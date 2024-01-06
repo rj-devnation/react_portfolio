@@ -7,16 +7,12 @@ import Projects from '../../components/Projects/Projects'
 const Home = () => {
     return (
         <div>
-            <div id='home'>
-                <div className='name-container'>
-                    <TypingAnimation />
-                </div>
+            <div className='name-container'>
+                <TypingAnimation />
             </div>
-            <div className='about-container'>
-                <div id='about'>
-                    <About />
-                </div>
-            </div>
+
+            <About />
+
             <div className='project-container'>
                 <div id='projects'>
                     <Projects />

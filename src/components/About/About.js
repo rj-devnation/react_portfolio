@@ -4,12 +4,12 @@ import '../../pages/Home/Home.css'
 const About = () => {
 
     return (
-        <div className='about-container'>
-            <div>
+        <div className='container-content'>
+            <div className='heading'>
                 About
             </div>
-            <div className='about-content'>
-                <p>"Inspect Element" was the gateway to my fascination of software development.</p> 
+            <div>
+                Recently graduated Business Information Technology at Red River College Polytechnic. 
             </div>
         </div>
     )

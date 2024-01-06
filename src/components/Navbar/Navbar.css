@@ -33,15 +33,14 @@ li {
     height: 35px;
     align-items: center;
     margin: 10px auto;
-    border-radius: 60px;
     width: 65vw;
-    box-shadow: 0px 2px 10px #747474;
+    box-shadow: 0px 1px 5px #747474;
 }
 
 /* Light Mode Styles */
 .light, .light .menu a, .light .nav-link, .light .menu {
     color: #464646;
-    background-color: #a8a8a8;
+    /* background-color: #a8a8a8; */
 }
 
 /* Dark Mode Styles */

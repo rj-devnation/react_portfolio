@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({isDarkMode, toggleDarkMode }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -43,11 +42,6 @@ const Navbar = () => {
         behavior: 'smooth',
       });
     }
-  };
-
-  // Function to toggle dark mode
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
   };
 
   // Apply dark mode styles when the theme changes

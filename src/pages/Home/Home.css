@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     width: 85vw;
     height: 200vw;
     margin: 0 auto;
@@ -29,7 +29,6 @@ body {
 
 .heading {
     font-family: 'Poppins Extra Bold';
-    flex-wrap: wrap;
     line-height: 1;
     font-size: 5em;
 }
@@ -75,7 +74,58 @@ body {
 }
 
 /* About Section */
+.about {
+    padding-bottom: 10px;
+}
 
 .about-me {
-    
+    font-weight:600;
+}
+
+.intro-name {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins Bold';
+    font-size: 25px;
+    color: #141414;
+}
+
+.intro-description {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+.graduated {
+    padding: 0px 2px 0px 2px;
+    border-radius: 20px;
+    background-color: #990a00;
+}
+
+.tech-section {
+    /* border: 2px solid blue; */
+}
+
+.view-tech {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.arrow-button {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.tech-skills {
+    display: none;
+}
+
+.tech-skills.show {
+    display: flex;
 }

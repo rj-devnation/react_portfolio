@@ -5,10 +5,7 @@ import TypingAnimation from '../../components/TypingAnimation/TypingAnimation';
 import Projects from '../../components/Projects/Projects'
 
 /* Icon Imports */
-import { SocialIcon } from 'react-social-icons';
-import 'react-social-icons/github'
-import 'react-social-icons/linkedin'
-import 'react-social-icons/linkedin'
+import { FaLinkedin, FaGithubSquare } from 'react-icons/fa'
 
 const Home = ({isDarkMode}) => {
     return (
@@ -28,11 +25,21 @@ const Home = ({isDarkMode}) => {
                         <TypingAnimation />
                     </div>
                     <div className='grouped-icons'>
-                        <SocialIcon className='icon' bgColor={`${isDarkMode ? '#e7e7e7' : '#161616'}`} fgColor='transparent' url='www.linkedin.com/' href="https://www.linkedin.com/in/rolandgeli/" target="_blank" rel="noopener noreferrer"/>
-                        <SocialIcon className='icon' bgColor={`${isDarkMode ? '#e7e7e7' : '#161616'}`} fgColor='transparent' url='www.github.com/' href="https://github.com/rj-devnation" target="_blank" rel="noopener noreferrer"/>
-                        <a href='other\Roland_Geli_Developer_Resume.pdf' target='_blank' rel="noopener noreferrer">
-                            <button className='resume-button icon' style={{backgroundColor: isDarkMode ? '#e7e7e7' : '#161616', color: isDarkMode ? '#161616' : '#e7e7e7'}}>Resume</button> 
-                        </a>
+                        <div className='icon github-icon'>
+                            <a href="https://github.com/rj-devnation" target="_blank" rel="noopener noreferrer" style={{color: `${isDarkMode ? '#e7e7e7' : '#161616'}`}}>
+                                <FaGithubSquare className='github-icon icon'/>
+                            </a>
+                        </div>
+                        <div className='icon linkedin-icon'>
+                            <a href="https://www.linkedin.com/in/rolandgeli/" target="_blank" rel="noopener noreferrer" style={{color: `${isDarkMode ? '#e7e7e7' : '#161616'}`}}>
+                                <FaLinkedin className='linkedin-icon icon'/>
+                            </a>
+                        </div>
+                        <div className='icon'>
+                            <a href='other\Roland_Geli_Developer_Resume.pdf' target='_blank' rel="noopener noreferrer">
+                                <button className='resume-button' style={{backgroundColor: isDarkMode ? '#e7e7e7' : '#161616', color: isDarkMode ? '#161616' : '#e7e7e7'}}>Resume</button> 
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

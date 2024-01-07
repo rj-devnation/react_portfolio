@@ -4,9 +4,9 @@ import './Projects.css'
 const Projects = () => {
 
     return (
-        <div>
-            <h1 className='project-header'>Projects</h1>
-            <div className='project'>Coming Soon...</div>
+        <div className='container-content'>
+            <div className='heading'>Projects</div>
+            <div>Coming Soon...</div>
         </div>
     )
 }

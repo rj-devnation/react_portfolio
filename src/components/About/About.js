@@ -11,6 +11,9 @@ const About = () => {
             <div>
                 Recently graduated Business Information Technology at Red River College Polytechnic. 
             </div>
+            <div>
+                LOREM OSJ Recently graduated Business Information Technology at Red River College Polytechnic. 
+            </div>
         </div>
     )
 };

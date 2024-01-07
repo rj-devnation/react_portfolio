@@ -152,12 +152,8 @@ input:checked + .slider:before {
 
 /* Media Query for Desktop */
 @media only screen and (max-width: 1022px) {
-    /* .navbar {
-        width: 73%;
-    } */
-
-    /* .mode-label {
-        visibility: visible;
+    /* .heading {
+        font-size: 50em;
     } */
 }
 
@@ -190,14 +186,50 @@ input:checked + .slider:before {
     .burger-menu {
       display: flex;
     }
+
 }
 
 @media only screen and (min-width: 970px){
+    /* Navbar */
     .logo {
         left: 2.5em;
     }
 
     .mode-label {
         display: flex;
+    }
+
+    /* General */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .firstname {
+        padding-right: 55px;
+    }
+
+    .heading {
+        display: inline-block;
+        position: relative;
+        right: 21px;
+        height: 10px;
+        font-size: 12em !important;
+    }
+    
+    .typewriter {
+        font-size: 50px !important;
+    }
+
+    .resume-button {
+        position: relative;
+        right:auto;
+        margin-right: 8%;
+        height: 150% !important;
+        width: 150% !important;
+        font-size: 3rem !important;
+        cursor: pointer;
     }
 }

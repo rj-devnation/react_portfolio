@@ -22,7 +22,6 @@ body {
 .heading {
     font-family: 'Poppins Extra Bold';
     font-size: 5em;
-    margin: 0px;
 }
 
 .lastname {
@@ -42,6 +41,7 @@ body {
 }
 
 .container-content {
+    margin-right: 8%;
     position: relative;
     top: 10%;
     left: 5%;

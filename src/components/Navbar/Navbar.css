@@ -40,7 +40,7 @@ li {
 /* Light Mode Styles */
 .light, .light .menu a, .light .nav-link, .light .menu {
     color: #464646;
-    /* background-color: #a8a8a8; */
+    background-color: #e7e7e7;
 }
 
 /* Dark Mode Styles */
@@ -59,6 +59,8 @@ li {
 
 .menu {
     display: flex;
+    position: relative;
+    bottom: 1%;
     margin: auto 15px auto;
 }
 
@@ -159,7 +161,7 @@ input:checked + .slider:before {
     } */
 }
 
-@media only screen and (max-width: 1510px) {
+@media only screen and (max-width: 1300px) {
     .logo {
         position: static;
     }

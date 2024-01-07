@@ -8,11 +8,9 @@ const About = () => {
             <div className='heading'>
                 About
             </div>
-            <div>
-                Recently graduated Business Information Technology at Red River College Polytechnic. 
-            </div>
-            <div>
-                LOREM OSJ Recently graduated Business Information Technology at Red River College Polytechnic. 
+            <div className='about-content'>
+                Hi, I'm Roland. I graduated Business Information Technology at Red River College Polytechnic. 
+                
             </div>
         </div>
     )

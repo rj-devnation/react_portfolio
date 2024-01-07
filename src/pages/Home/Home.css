@@ -8,13 +8,13 @@ body {
     display: flex;
     position: relative;
     margin-top: 50px;
-    top:10%;
-    left: 4.5%;
+    top: 2pt;
+    left: 20pt;
     margin-bottom: 20px;
-    padding-bottom: 5%;
-    padding-top: 4%;
+    padding-bottom: 15pt;
+    padding-top: 18pt;
     border-radius: 30px;
-    width: 90%;
+    width: 325pt;
     box-shadow: 0px 1px 5px #747474;
     margin-bottom: 10%;
 }
@@ -27,7 +27,7 @@ body {
 
 .lastname {
     position: relative;
-    bottom: 15%;
+    bottom: 12%;
 }
 
 .grouped-icons {
@@ -35,11 +35,10 @@ body {
     /* border: 1px solid black; */
     margin: 0;
     padding: 0;
-    width: 100%;
     position: relative;
     justify-content: space-around;
-    bottom: 6%;
-    left: 10%;
+    bottom: 19pt;
+    left: 34.5pt;
 }
 
 .icon {
@@ -56,10 +55,13 @@ body {
 
 .resume-button {
     font-family: 'Poppins Bold', sans-serif;
+    position: relative;
+    top: 3.1px;
     font-size: 1em;
-    border-radius: 11px;
-    width: 160%;
-    height: 90%;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 8rem;
+    height: 3.027rem;
     border: 0px;
     box-shadow: 0px 0px 5px #747474;
     cursor: pointer;
@@ -71,4 +73,10 @@ body {
     top: 10%;
     left: 5%;
     padding: 0;
+}
+
+/* About Section */
+
+.about-content {
+    padding-bottom: 40pt;
 }

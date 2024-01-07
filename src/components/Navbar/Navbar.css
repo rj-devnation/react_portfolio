@@ -76,6 +76,8 @@ li {
 }
 
 .bar {
+    position: relative;
+    right: 15px;
     height: 5px;
     width: 30px;
     margin: 2px 0;

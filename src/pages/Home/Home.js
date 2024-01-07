@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
+import Navbar from '../../components/Navbar/Navbar';
 import About from '../../components/About/About';
 import TypingAnimation from '../../components/TypingAnimation/TypingAnimation';
 import Projects from '../../components/Projects/Projects'
@@ -7,23 +8,29 @@ import Projects from '../../components/Projects/Projects'
 /* Icon Imports */
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa'
 
-const Home = ({isDarkMode}) => {
+const Home = () => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    // Function to toggle dark mode
+    const toggleDarkMode = () => {
+      setIsDarkMode((prevMode) => !prevMode);
+    };
+
     return (
-        <div>
-            <div className='container'>
-                <div className='container-content'>
+        <div className='container'>
+            <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
+            <div className='section'>
+                <div className='section-content'>
                     {/* <div>
                         <img src='images\calgary_me.png' width={350} className='me'/>
                     </div> */}
-                    <div className='heading firstname'>
-                        Roland
-                    </div>
-                    <div className='heading lastname'>
-                        Geli
+                    <div className='heading'>
+                        Roland Geli
                     </div>
                     <div className='typewriter'>
                         <TypingAnimation />
                     </div>
+
                     <div className='grouped-icons'>
                         <div className='icon github-icon'>
                             <a href="https://github.com/rj-devnation" target="_blank" rel="noopener noreferrer" style={{color: `${isDarkMode ? '#e7e7e7' : '#161616'}`}}>
@@ -41,16 +48,17 @@ const Home = ({isDarkMode}) => {
                             </a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 
-            <div className='container'>
+            <div className='section'>
                 <div id='about'>
                     <About />
                 </div>
             </div>
 
-            <div className='container'>
+            <div className='section'>
                 <div id='projects'>
                     <Projects />
                 </div>

@@ -160,7 +160,7 @@ input:checked + .slider:before {
     } */
 }
 
-@media (max-width: 1300px) {
+@media (width <= 1300px) {
     .logo {
         position: static;
     }
@@ -205,10 +205,9 @@ input:checked + .slider:before {
 
     .landing {
         height: 40%;
-        
         .heading {
+            max-width: 90%;
             padding-top: 10rem;
-            padding-bottom: 3rem;
         }
 
         .typewriter {

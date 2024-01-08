@@ -7,7 +7,7 @@ const TypingAnimation = () => {
   return (
       <div>
             <Typewriter
-                words={['<Developer>', '<Problem Solver>', '<Web Designer>']}
+                words={['<Software Developer>', '<Problem Solver>', '<Web Developer>']}
                 loop={10}
                 typeSpeed={90}
                 deleteSpeed={100}

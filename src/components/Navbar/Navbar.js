@@ -55,14 +55,14 @@ const Navbar = ({isDarkMode, toggleDarkMode }) => {
   }, [isDarkMode]);
 
     return (
-        <div className={`navbar ${isDarkMode ? 'dark' : 'light'}`} style={{borderRadius: showMenu ? '30px' : '60px'}}>
+        <div className={`navbar ${isDarkMode ? 'dark' : 'light'}`} >
 
             <div className='mode-label'>
               {isDarkMode ? 'Light Mode' : 'Dark Mode'}
             </div>
             
             <label className='switch'>
-              <input type='checkbox' checked={isDarkMode} onChange={toggleDarkMode}/>
+              <input type='checkbox' checked={isDarkMode} onChange={toggleDarkMode} disabled/>
               <span className='slider round'></span>
             </label>
 

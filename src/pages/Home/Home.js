@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import './Home.css';
 import Navbar from '../../components/Navbar/Navbar';
-import About from '../../components/About/About';
 import TypingAnimation from '../../components/TypingAnimation/TypingAnimation';
-import Projects from '../../components/Projects/Projects'
+import ContactFormAPI from '../../components/ContactForm/ContactFormAPI';
 
 /* Icon Imports */
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa'
-import { SlArrowDown } from "react-icons/sl";
+import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 const Home = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,6 +20,13 @@ const Home = () => {
     
     const toggleShowTech = () => {
         setShowTech(!showTech)
+    }
+
+    const backToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
     }
     
     return (
@@ -49,24 +55,25 @@ const Home = () => {
                             </div>
                             <div className='icon'>
                                 <a href='other\Roland_Geli_Developer_Resume.pdf' target='_blank' rel="noopener noreferrer">
-                                    <button className='resume-button' style={{backgroundColor: isDarkMode ? '#e7e7e7' : '#161616', color: isDarkMode ? '#161616' : '#e7e7e7'}}>Resume</button> 
+                                    <button className='resume-button'>Resume</button> 
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
 
             <div className='section' id='about'>
-                <div className='section-content about'>
-                    <div>
+                <div className='section-content'>
+                    <div className='about'>
                         <div className='heading'>
                             About
                         </div>
                         <div className='about-me'>
-                            <span className='intro-name'>Hi, I'm Roland.</span>
-                            <span className='intro-description'><p>I graduated <span className='graduated'>Business Information Technology</span> at Red River College Polytechnic. I intend to use my skills and knowledge in full stack development and work towards a career that will allow me to grow as a developer and bring creativity to my work.</p></span>
+                            <span className='intro-name'>Hi, I'm <span className='accent name'>Roland</span>.</span>
+                            <div className='intro-description-container'>
+                                <span className='intro-description'><p>I graduated <span className='accent'>Business Information Technology</span> at <span className='accent'>Red River College Polytechnic</span>. I intend to use my skills and knowledge in full stack development and work towards a career that will allow me to grow as a developer and bring creativity to my work.</p></span>
+                            </div>
                         </div>
 
                         <div className='tech-section'>
@@ -97,8 +104,24 @@ const Home = () => {
                 <div className='section-content'>
                     <div>
                         <div className='heading'>Projects</div>
-                        <div>Coming Soon...</div>
+                        <div className='projects'>Coming Soon...</div>
                     </div>
+                </div>
+            </div>
+
+            <div className='section contact' id='contact'>
+                <div className='section-content'>
+                    <h2 className='connect heading'><p><span className='accent'>Connect</span> with me</p></h2>
+                        <ContactFormAPI isDarkMode={isDarkMode}/>
+                </div>
+            </div>
+
+            <div className='footer'>
+                <div className='footer-button' onClick={backToTop}>
+                    <div className='arrow-button'>
+                        <SlArrowUp />
+                    </div>
+                    <button style={{cursor: 'pointer'}}>Scroll to Top</button>
                 </div>
             </div>
         </div>

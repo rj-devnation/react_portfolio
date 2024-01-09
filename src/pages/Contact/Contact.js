@@ -1,11 +1,11 @@
 import React from 'react';
-import ContactForm from '../../components/ContactForm/ContactForm';
+import ContactFormAPI from '../../components/ContactForm/ContactFormAPI';
 
 const Contact = () => {
     return (
         <div>
             <h1>Get in touch!</h1>
-            <ContactForm />
+            <ContactFormAPI />
         </div>
     )
 }

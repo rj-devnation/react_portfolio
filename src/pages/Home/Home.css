@@ -212,3 +212,14 @@ body {
         padding-bottom: 20px;
     }
 }
+
+.construction {
+    font-size: 1.5rem;
+    background-color: rgb(146, 146, 146);
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom:89.5vh;
+    z-index: 2;
+}

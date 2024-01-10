@@ -29,7 +29,7 @@ li {
     display: flex;
     position: sticky;
     justify-content: center;
-    z-index: 1000;
+    z-index: 1;
     height: 35px;
     align-items: center;
     margin: 0 auto;

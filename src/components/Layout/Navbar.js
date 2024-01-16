@@ -58,7 +58,8 @@ function Navbar(){
                         </div>
                     </div>
                     <div className='bg-red-200 h-16'>
-                        <h2 className='text-center text-xl p-4'>Website Under Construction</h2>
+                        <h2 className='text-center text-xl pt-1'>Website Under Construction</h2>
+                        <p className='text-center'>Links don't take you anywhere</p>
                     </div>
                 </div>
         </div>

@@ -53,7 +53,7 @@ function Home(){
                                     <li className='bg-red-200 px-3 rounded-md'>MongoDB</li>
                                     <li className='bg-red-200 px-3 rounded-md'>MySQL</li>
                                 </ul>
-                                <BsChevronCompactDown size={30} onClick={handleSkills} className={`${rotate} transition ease-in duration-0 w-full`}/>
+                                <BsChevronCompactDown size={30} onClick={handleSkills} className={`${rotate} transition ease-in delay-[325ms] duration-0 w-full`}/>
                             </div>
                         </div>
                 </section>
@@ -61,7 +61,7 @@ function Home(){
                     <div className='flex flex-col items-center text-center justify-center py-11 md:h-[843px] lg:h-[831px] mx-2 md:mx-0'>
                         <h1 className='text-5xl font-semibold z-[2]'>Projects</h1>
                         <div className='relative w-72 h-6 bg-red-500 bottom-5 skew-x-[24deg]'></div>
-                        <div className='flex items-center justify-center w-96 h-64 bg-gradient-to-t from-black to-zinc-700 rounded-xl'>
+                        <div className='flex items-center justify-center w-96 h-64 bg-gradient-to-t from-black to-zinc-700 rounded-xl drop-shadow-md'>
                             <p className='font-bold text-white text-2xl'>Coming Soon...</p>
                         </div>
                         <div className='flex'>

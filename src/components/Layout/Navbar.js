@@ -11,7 +11,7 @@ function Navbar(){
 
     return (
         <div className='font-bold'>
-            <div className='z-[99] flex fixed md:hidden justify-end items-center w-full bg-white h-16 pr-4'>
+            <div className='z-[99] flex fixed md:hidden justify-end items-center w-full bg-white h-16 pr-4 shadow-sm'>
                 <AiOutlineMenu onClick={handleNav} size={24}/>
             </div>
             {
@@ -38,9 +38,9 @@ function Navbar(){
                     ''
                 )}
                 <div className='md:block hidden z-10 fixed w-full'>
-                    <div className='flex justify-between items-center py-2 px-12 bg-white md:h-[76px] lg:h-[88px]'>
-                        <a href='#main' className='px-7'>
-                            RJ
+                    <div className='flex justify-between items-center py-2 px-12 bg-white shadow-sm md:h-[76px] lg:h-[88px]'>
+                        <a href='#main' className='px-7 cursor-default'>
+                        &#91; RJ &#93;
                         </a>
                         <div className='flex justify-between items-center w-92 h-full'>
                             <a href='#main' className='px-7'>
@@ -56,6 +56,9 @@ function Navbar(){
                                 Contact
                             </a>
                         </div>
+                    </div>
+                    <div className='bg-red-200 h-16'>
+                        <h2 className='text-center text-xl p-4'>Website Under Construction</h2>
                     </div>
                 </div>
         </div>

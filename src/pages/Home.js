@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Layout/Navbar';
 import { BsChevronCompactDown } from "react-icons/bs";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const skills = [
     {
         skill: 'React'
@@ -146,8 +147,12 @@ function Home(){
                         <div className='flex flex-col mt-6'>
                             <p className='text-lg md:text-2xl font-semibold uppercase'>Socials</p>
                             <div className='flex gap-2 mt-4 text-xl md:text-2xl lg:text-[30px]'>
-                                <FaLinkedin />
-                                <FaSquareGithub />
+                                <Link to='https://www.linkedin.com/in/rolandgeli/' target='_blank' rel="noreferrer noopener">
+                                    <FaLinkedin />
+                                </Link>
+                                <Link to='https://github.com/rj-devnation' target='_blank' rel="noreferrer noopener">
+                                    <FaSquareGithub />
+                                </Link>
                             </div>
                         </div>
                         <div className='flex items-end mt w-full mt-10 mb-3'>

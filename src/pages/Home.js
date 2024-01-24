@@ -3,6 +3,9 @@ import Navbar from '../components/Layout/Navbar';
 import { BsChevronCompactDown } from "react-icons/bs";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import ContactForm from '../components/ContactForm/ContactFormAPI';
+
+
 const skills = [
     {
         skill: 'React'
@@ -102,7 +105,7 @@ function Home(){
                                     <h2 className='mb-5 px-4 md:text-2xl font-bold text-left'>My Skills</h2>
                                     <ul className='flex flex-wrap gap-2 items-center px-4'>
                                         {skills.map(({skill}) => (
-                                            <li className='bg-red-200 px-6 py-2 rounded-md shadow-md font-semibold text-lg'>{skill}</li>
+                                            <li className='bg-red-200 px-6 py-2 rounded-md shadow-md font-semibold text-lg cursor-default select-none'>{skill}</li>
                                         ))}
                                     </ul>
                                 </div>
@@ -111,14 +114,9 @@ function Home(){
                             <div className='relative top-6 flex w-full text-sm justify-center items-center flex-col md:hidden pb-3'>
                                 <p>View Technical Skills</p>
                                 <ul className={`flex flex-wrap gap-2 items-center justify-center ${hideSkills} w-full transition-[max-height] ease-out duration-300 px-4`}>
-                                    <li className='bg-red-200 px-3 rounded-md'>React</li>
-                                    <li className='bg-red-200 px-3 rounded-md'>Python</li>
-                                    <li className='bg-red-200 px-3 rounded-md'>C#</li>
-                                    <li className='bg-red-200 px-3 rounded-md'>HTML5</li>
-                                    <li className='bg-red-200 px-3 rounded-md'>CSS</li>
-                                    <li className='bg-red-200 px-3 rounded-md'>JavaScript</li>
-                                    <li className='bg-red-200 px-3 rounded-md'>MongoDB</li>
-                                    <li className='bg-red-200 px-3 rounded-md'>MySQL</li>
+                                    {skills.map(({skill}) => (
+                                                <li className='bg-red-200 px-3 rounded-md'>{skill}</li>
+                                            ))}
                                 </ul>
                                 <BsChevronCompactDown size={30} onClick={handleSkills} className={`${rotate} transition ease-in delay-[325ms] duration-0 w-full`}/>
                             </div>
@@ -136,6 +134,11 @@ function Home(){
                                 View
                             </a>
                         </div>
+                    </div>
+                </section>
+                <section id='contact-form' className='bg-gray-100'>
+                    <div className='md:w-4/12 mx-auto'>
+                        <ContactForm />
                     </div>
                 </section>
                 <footer>

@@ -76,7 +76,7 @@ function Navbar(){
                             <Link to='/#projects' onClick={scrollToSection('projects')} className='px-7'>
                                 Projects
                             </Link>
-                            <Link to='/#contact' onClick={scrollToSection('contact')} className='px-7'>
+                            <Link to='/#contact' onClick={scrollToSection('contact-form')} className='px-7'>
                                 Contact
                             </Link>
                         </div>
